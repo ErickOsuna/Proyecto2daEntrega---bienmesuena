@@ -1,4 +1,4 @@
-/* Gris NOTAS COMUNES*/ 
+/* Gris NOTAS COMUNES*/
 /* * Verde INICIO DE SECCIONES*/
 /* ! Rojo FIN DE SECCIONES*/
 /* TODO: MEDIA QUERIES */
@@ -9,7 +9,7 @@
 
 /* *INICIO DEL RESET */
 
-*{
+* {
     padding: 0;
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -20,15 +20,15 @@
 
 /* ! FIN DEL RESET */
 
-/* * INICIO DEL GRID-LAYOUT */ 
+/* * INICIO DEL GRID-LAYOUT */
 
-.grid-layout{
+.grid-layout {
     width: 100%;
     height: auto;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto auto auto;
-    grid-template-areas: 
+    grid-template-areas:
         "encabezado encabezado encabezado encabezado encabezado"
         "cuerpo cuerpo cuerpo cuerpo cuerpo"
         "pie pie pie pie pie"
@@ -40,7 +40,7 @@
 
 /* * INICIO DEL HEADER */
 
-.encabezado{
+.encabezado {
     background-color: black;
     grid-area: encabezado;
     color: white;
@@ -51,11 +51,11 @@
     -moz-box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
     box-shadow: 0px 7px 5px 0px rgba(0, 0, 0, 0.75);
     position: sticky;
-    top: 0; 
-    z-index: 2;
+    top: 0;
+    z-index: 10;
 }
 
-.encabezado ul{
+.encabezado ul {
     background-color: rgb(176, 176, 248);
     display: flex;
     justify-content: center;
@@ -64,9 +64,10 @@
     height: auto;
     color: white;
     padding: 5px;
+    margin: 5px;
 }
 
-.encabezado div{
+.encabezado div {
     /* background-color: aquamarine; */
     display: flex;
     justify-content: center;
@@ -76,40 +77,45 @@
     padding: 5px 60px 5px 10px;
 }
 
-.encabezado ul li{
+.encabezado ul li {
     padding: 10px 30px;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 200;
     transition: 0.6s;
+    text-decoration: none;
 }
 
-.encabezado div h1{
+.encabezado div h1 {
     font-weight: 200;
     font-size: 22px;
 }
 
-.encabezado ul a:link{
+.encabezado ul a:link {
     color: white;
+    text-decoration: none;
 }
 
-.encabezado ul a:visited{
+.encabezado ul a:visited {
     color: white;
+    text-decoration: none;
 }
 
-.encabezado ul a:hover{
+.encabezado ul a:hover {
     color: red;
+    text-decoration: none;
 }
 
-.encabezado ul a:active{
-    color: rgb(255,73,73);
+.encabezado ul a:active {
+    color: rgb(255, 73, 73);
+    text-decoration: none;
 }
 
 /* ! FIN DEL HEADER */
 
 /* * INICIO DEL MAIN DEL INDEX */
 
-.cuerpo{
+.cuerpo {
     grid-area: cuerpo;
     display: flex;
     width: 100%;
@@ -118,7 +124,7 @@
     align-items: center;
 }
 
-.primeraSeccion{
+.primeraSeccion {
     width: 100%;
     height: 100px;
     margin: 30px;
@@ -128,18 +134,18 @@
     flex-direction: column;
 }
 
-.primeraSeccion h2{
+.primeraSeccion h2 {
     font-size: 50px;
     font-weight: 200;
 }
 
-.primeraSeccion h3{
+.primeraSeccion h3 {
     font-size: 30px;
     font-weight: 200;
     font-style: italic;
 }
 
-.hero{
+.hero {
     background-image: url("../img/fondo-inicio1.jpg");
     width: 100%;
     height: 500px;
@@ -155,22 +161,23 @@
     justify-content: center;
 }
 
-.hero h2, .hero p{
+.hero h2,
+.hero p {
     margin-left: 100px;
     margin-right: 200px;
     font-weight: 200;
 }
 
-.hero h2{
+.hero h2 {
     font-size: 50px;
 }
 
-.hero p{
+.hero p {
     font-size: 18px;
     font-style: italic;
 }
 
-.aphorism{
+.aphorism {
     /* background-color: blanchedalmond; */
     display: flex;
     width: 80%;
@@ -182,20 +189,20 @@
     margin: 30px 0;
 }
 
-.aphorism p{
+.aphorism p {
     font-size: 18px;
     font-weight: 500;
     font-style: italic;
     text-align: center;
 }
 
-.aphorism h4{
+.aphorism h4 {
     font-size: 18px;
     font-weight: 200;
     margin-bottom: 20px;
 }
 
-.music{
+.music {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -204,7 +211,7 @@
     height: auto;
 }
 
-.spoti{
+.spoti {
     width: 4%;
     margin: 20px;
 }
@@ -213,7 +220,7 @@
 
 /* * INICIO DEL MAIN DE NOSOTROS */
 
-.titulo h2{
+.titulo h2 {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -222,7 +229,7 @@
     font-weight: 200;
 }
 
-.submenu ul{
+.submenu ul {
     width: 100%;
     height: auto;
     display: flex;
@@ -231,7 +238,7 @@
     text-transform: uppercase;
 }
 
-.submenu ul a{
+.submenu ul a {
     padding: 20px;
     margin-top: 50px;
     transition: 0.6s;
@@ -239,23 +246,23 @@
     font-size: 16px;
 }
 
-.submenu ul a:link{
+.submenu ul a:link {
     color: rgb(0, 0, 0);
 }
 
-.submenu ul a:visited{
+.submenu ul a:visited {
     color: rgb(0, 0, 0);
 }
 
-.submenu ul a:hover{
+.submenu ul a:hover {
     color: red;
 }
 
-.submenu ul a:active{
-    color: rgb(255,73,73);
+.submenu ul a:active {
+    color: rgb(255, 73, 73);
 }
 
-.nosotros{
+.nosotros {
     display: flex;
     width: 100%;
     height: auto;
@@ -264,11 +271,11 @@
     align-items: center;
 }
 
-.nosotros div img{
+.nosotros div img {
     width: 300px;
 }
 
-#director{
+#director {
     display: flex;
     width: 100%;
     height: auto;
@@ -276,7 +283,7 @@
     align-items: center;
 }
 
-#director h3{
+#director h3 {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -287,7 +294,7 @@
     margin: 50px;
 }
 
-.members{
+.members {
     display: flex;
     width: 80%;
     height: auto;
@@ -298,21 +305,21 @@
     margin-bottom: 60px;
 }
 
-.members h4{
+.members h4 {
     font-size: 22px;
     font-weight: 500;
     padding: 20px;
     font-style: italic;
 }
 
-.members p{
+.members p {
     font-size: 18px;
     font-weight: 200;
     padding: 40px;
     text-align: justify;
 }
 
-#sopranos h3{
+#sopranos h3 {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -323,7 +330,7 @@
     margin: 50px 0;
 }
 
-#contraltos h3{
+#contraltos h3 {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -334,7 +341,7 @@
     margin: 50px 0;
 }
 
-#tenores h3{
+#tenores h3 {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -345,7 +352,7 @@
     margin: 50px 0;
 }
 
-#bajos h3{
+#bajos h3 {
     width: 100%;
     height: auto;
     font-size: 40px;
@@ -360,20 +367,20 @@
 
 /* * INICIO DEL MAIN DE NOTICIAS */
 
-.news{
+.news {
     display: flex;
     width: 60%;
     height: auto;
     flex-direction: column;
 }
 
-.news h3{
+.news h3 {
     font-size: 40px;
     font-weight: 200;
     margin: 40px 0;
 }
 
-.news p{
+.news p {
     margin: 40px 0;
     font-weight: 200;
     font-size: 20px;
@@ -383,85 +390,59 @@
 
 /* * INICIO DEL MAIN DE MULTIMEDIA */
 
-.photo-gallery{
-    width: 80%;
-    height: auto;
-}
-
-.audio-gallery{
-    width: 80%;
-    height: auto;
-}
-
-.video-gallery{
-    width: 80%;
-    height: auto;
-}
-
-.icon{
-    display: flex;
-    width: 100%;
-    height: auto;
-    justify-content: center;
-}
-
-.icon img{
-    width: 10%;
-    margin: 50px;
-}
-
-.grid-gallery{
+.grid-gallery {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     width: 100%;
     height: auto;
-    gap: 10px 15px;
+    gap: 15px 15px;
     transition: 0.6s;
-    display: none;
+    margin: 50px 0;
 }
 
-.grid-gallery div img{
+.grid-gallery2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100%;
+    height: auto;
+    gap: 15px 15px;
+    transition: 0.6s;
+    margin: 50px 0;
+}
+
+.grid-gallery div img {
     width: 100%;
     transition: 0.6s;
     border: 0.1px solid white;
 }
 
-.grid-gallery div img:hover{
-    scale: 1.7;
+.grid-gallery div img:hover {
+    scale: 1.8;
     cursor: pointer;
 }
 
-.photo-gallery:hover .grid-gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    height: auto;
-    gap: 10px 15px;
-}
-
-.audio-gallery:hover .grid-gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    height: auto;
-    gap: 10px 15px;
-}
-
-.video-gallery:hover .grid-gallery{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    width: 100%;
-    height: auto;
-    gap: 10px 15px;
-}
-
-.video4{
+.video4 {
     grid-row: span 2;
     grid-column: span 3;
+}
+
+.boton2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.boton-multimedia {
+    width: 80px;
+}
+
+.galeria-multimedia {
+    width: 80%;
+    margin: 80px;
 }
 
 /* ! FIN DEL MAIN DE MULTIMEDIA */
@@ -511,7 +492,7 @@ textarea {
     max-width: 100%;
 }
 
-#boton{
+#boton {
     background-color: black;
     color: white;
     padding: 20px;
@@ -520,7 +501,7 @@ textarea {
     font-size: 20px;
 }
 
-#boton:hover{
+#boton:hover {
     background-color: rgb(78, 78, 78);
     cursor: pointer;
 }
@@ -531,7 +512,7 @@ textarea {
     margin: auto;
 }
 
-.mapa h3{
+.mapa h3 {
     text-align: center;
     width: 100%;
     font-size: 40px;
@@ -539,7 +520,7 @@ textarea {
     margin: 20px 0;
 }
 
-.mapa pre{
+.mapa pre {
     width: 100%;
     font-size: 20px;
     font-weight: 200;
@@ -550,7 +531,7 @@ textarea {
 
 /* * INICIO DEL FOOTER */
 
-.pie{
+.pie {
     grid-area: pie;
     display: flex;
     width: 100%;
@@ -563,7 +544,7 @@ textarea {
     box-shadow: 0px -7px 5px 0px rgba(0, 0, 0, 0.75);
 }
 
-.pie-flex{
+.pie-flex {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -573,34 +554,34 @@ textarea {
     font-weight: 200;
 }
 
-.pie div a{
+.pie div a {
     transition: 0.6s;
 }
 
-.pie img{
+.pie img {
     width: 30px;
     margin: 10px;
     transition: 0.6s;
 }
 
-.pie img:hover{
+.pie img:hover {
     transform: scale(1.3);
 }
 
-.pie a:link{
+.pie a:link {
     color: white;
 }
 
-.pie a:visited{
+.pie a:visited {
     color: white;
 }
 
-.pie a:hover{
+.pie a:hover {
     color: red;
 }
 
-.pie a:active{
-    color: rgb(255,73,73);
+.pie a:active {
+    color: rgb(255, 73, 73);
 }
 
 /* ! FIN DEL FOOTER */
