@@ -713,6 +713,14 @@ textarea {
         margin-left: 300px;
     }
 
+    .news{
+        width: 90%;
+    }
+
+    .news h3{
+        text-align: center;
+    }
+
     .contacto{
         flex-direction: column;
     }
@@ -787,6 +795,10 @@ textarea {
         scale: 0.9;
     }
 
+    .news h3{
+        scale:0.8;
+    }
+
 }
 
 /* ? FIN @MEDIA QUERIES 620 PX*/
@@ -811,6 +823,10 @@ textarea {
 
     .hero p{
         scale: 0.8;
+    }
+
+    .news h3 {
+        scale:0.7;
     }
 
     .formulario{
