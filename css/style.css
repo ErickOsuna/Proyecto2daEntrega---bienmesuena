@@ -116,6 +116,10 @@
     visibility: hidden;
 }
 
+.erick-boton{
+    border: 1px solid white;
+}
+
 /* ! FIN DEL HEADER */
 
 /* * INICIO DEL MAIN DEL INDEX */
@@ -526,6 +530,13 @@ textarea {
     margin: 20px 0;
 }
 
+.titulo-encuentranos{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blueviolet; */
+    width: 100%;
+}
+
 /* ! FIN DEL MAIN DE CONTACTO */
 
 /* * INICIO DEL FOOTER */
@@ -702,6 +713,24 @@ textarea {
         margin-left: 300px;
     }
 
+    .contacto{
+        flex-direction: column;
+    }
+
+    .formulario{
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    .mapa{
+        width: 80%;
+    }
+
+    .mapa div h3, .mapa div p{
+        text-align: center;
+        scale:0.9
+    }
+
     .pie-flex{
         display: none;
     }
@@ -715,7 +744,6 @@ textarea {
         flex-direction: column;
         align-items: center;
         width: 100%;
-
     }
 
     .pie-flex2 p{
@@ -758,6 +786,7 @@ textarea {
         text-align: center;
         scale: 0.9;
     }
+
 }
 
 /* ? FIN @MEDIA QUERIES 620 PX*/
@@ -782,6 +811,10 @@ textarea {
 
     .hero p{
         scale: 0.8;
+    }
+
+    .formulario{
+        scale:0.9;
     }
 
 }
